@@ -18,16 +18,160 @@
       <div class="menu-toggle"></div>
       <nav>
         <ul>
-          <li><a href="http://localhost/wordpress" class="active">Home</a></li>
+          <li><a href="" class="active">Home</a></li>
           <li><a href="collage-personali">Collage Personali</a></li>
           <li><a href="collage-depoca">Collage d'Epoca</a></li>
           <li><a href="commissioni">Commissioni</a></li>
           <li><a href="shop">Shop</a></li>
-          <li><a href="chi-sono">Chi sono</a></li>
-          <li><a href="contatti">Contatti2</a></li>
+          <li><a href="chi-sono.html">Chi sono</a></li>
+          <li><a href="contatti">Contatti</a></li>
         </ul>
       </nav>
       <div class="clearfix"></div>
     </header>
+    <main id="site-content" role="main">
+      <div id="copertina"></div>
+      <section>
+        <div class="banner">
+          <div class="content">
+            <h2>
+              Sono
+              <span
+                ><?php echo get_theme_mod("id_setting_nome",'NOME E COGNOME'); ?></span
+              >
+            </h2>
+            <p><?php echo get_theme_mod("id_setting_descrizione"); ?></p>
+            <!--a href="http://localhost/wordpress/chi-sono/"></a-->
+          </div>
+
+          <!--<ul class="social">
+         <li><a href="<?php //echo get_theme_mod("id_setting_facebook"); ?>" id="facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+         <li><a href="<?php //echo get_theme_mod("id_setting_instagram"); ?>" id="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+         <li><a href="<?php //echo get_theme_mod("id_setting_linkedin"); ?>" id="linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+         </ul>-->
+        </div>
+      </section>
+      <h2 class="miei-lavori">I miei <span>lavori</span></h2>
+      <section class="tipologie-lavori">
+        <div class="container-lavori">
+          <div class="card">
+            <div class="imgBx">
+              <img class="img-lavori" src="" alt="" />
+            </div>
+            <div class="contentBx">
+              <div class="content-lavori">
+                <a href="" style="text-decoration: none; color: #262626"
+                  ><h3></h3>
+                  <p></p
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imgBx">
+              <img class="img-lavori" src="" alt="" />
+            </div>
+            <div class="contentBx">
+              <div class="content-lavori">
+                <a href=""
+                  ><h3></h3>
+                  <p></p
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imgBx">
+              <img class="img-lavori" src="" alt="" />
+            </div>
+            <div class="contentBx">
+              <div class="content-lavori">
+                <a href="" style="text-decoration: none; color: #262626"
+                  ><h3></h3>
+                  <p></p
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-video">
+          <div class="box box1">
+            <video src="img/opere/video/4.mp4" autoplay loop muted></video>
+            <div class="content-video">
+              <h2>Video 1</h2>
+            </div>
+          </div>
+          <div class="box box2">
+            <video src="img/opere/video/2.mp4" autoplay loop muted></video>
+            <div class="content-video">
+              <h2>Video 2</h2>
+            </div>
+          </div>
+          <div class="box box3">
+            <video src="img/opere/video/3.mp4" autoplay loop muted></video>
+            <div class="content-video">
+              <h2>Video 3</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="site-footer">
+        <div class="footer">
+        <div class="footer-content">
+            
+            <ul class="socials">
+            <li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+            <li><a href="" ><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+            <p>© 2021 Maddalena Re - P. IVA 02922660358 - tutti i diritti sono riservati</p>
+            <p>Design with love by <span>Martina</span></p>
+        </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+            $('.menu-toggle').click(function(){
+                $('.menu-toggle').toggleClass('active')
+                $('nav').toggleClass('active')
+            })
+        })
+        </script>
+        
+        <script type="text/javascript">
+        const bg = document.getElementById('copertina');
+        var windowWidth = window.outerWidth;
+        //if (windowWidth >= 1200) {
+        window.addEventListener('scroll', function(){
+            //bg.style.backgroundSize = 160 - +window.pageYOffset/12+'%';
+            bg.style.opacity = 1 - +window.pageYOffset/600+'';
+        })
+        //}else if (windowWidth <= 1200){
+            //window.addEventListener('scroll', function(){
+            //bg.style.backgroundSize = 160 - +window.pageYOffset/14+'%';
+            //bg.style.opacity = 1 - +window.pageYOffset/700+'';
+        //})  
+        //}
+        </script>
+        
+        <script type="text/javascript">
+        let box = document.querySelectorAll('.box');
+        box.forEach(popup => popup.addEventListener('click', () => {
+            popup.classList.toggle('active')
+        }))
+        </script>
+        
+        <script>
+        
+        </script>
+        </footer>
+        
+    
+        </body>
+        </html>
   </body>
 </html>

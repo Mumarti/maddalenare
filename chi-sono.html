@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Maddalena Re</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header id="site-header" class="l-header">
+      <div class="logo"></div>
+      <div class="menu-toggle"></div>
+      <nav>
+        <ul>
+          <li><a href="http://localhost/wordpress" class="active">Home</a></li>
+          <li><a href="collage-personali">Collage Personali</a></li>
+          <li><a href="collage-depoca">Collage d'Epoca</a></li>
+          <li><a href="commissioni">Commissioni</a></li>
+          <li><a href="shop">Shop</a></li>
+          <li><a href="chi-sono">Chi sono</a></li>
+          <li><a href="contatti">Contatti</a></li>
+        </ul>
+      </nav>
+      <div class="clearfix"></div>
+    </header>
+    <div class="section-about-me">
+      <img src="" class="immagine-about-me" alt="" />
+      <div class="content-about-me">
+        <div class="textBox-about-me">
+          <h2>MADDALENA RE</h2>
+          <h3>Collage Artist</h3>
+          <p><em></em> <br /><br /></p>
+        </div>
+      </div>
+      <ul class="social-about-me">
+        <li>
+          <a href="" style="--i: 12"
+            ><i class="fa fa-facebook-square" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li>
+          <a href="" style="--i: 13"
+            ><i class="fa fa-instagram" aria-hidden="true"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+
+    <footer id="site-footer">
+        <div class="footer">
+        <div class="footer-content">
+            
+            <ul class="socials">
+            <li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+            <li><a href="" ><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+            <p>© 2021 Maddalena Re - P. IVA 02922660358 - tutti i diritti sono riservati</p>
+            <p>Design with love by <span>Martina</span></p>
+        </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+            $('.menu-toggle').click(function(){
+                $('.menu-toggle').toggleClass('active')
+                $('nav').toggleClass('active')
+            })
+        })
+        </script>
+        
+        <script type="text/javascript">
+        const bg = document.getElementById('copertina');
+        var windowWidth = window.outerWidth;
+        //if (windowWidth >= 1200) {
+        window.addEventListener('scroll', function(){
+            //bg.style.backgroundSize = 160 - +window.pageYOffset/12+'%';
+            bg.style.opacity = 1 - +window.pageYOffset/600+'';
+        })
+        //}else if (windowWidth <= 1200){
+            //window.addEventListener('scroll', function(){
+            //bg.style.backgroundSize = 160 - +window.pageYOffset/14+'%';
+            //bg.style.opacity = 1 - +window.pageYOffset/700+'';
+        //})  
+        //}
+        </script>
+        
+        <script type="text/javascript">
+        let box = document.querySelectorAll('.box');
+        box.forEach(popup => popup.addEventListener('click', () => {
+            popup.classList.toggle('active')
+        }))
+        </script>
+        
+        <script>
+        
+        </script>
+        </footer>
+        
+    
+        </body>
+        </html>
+  </body>
+</html>
+  </body>
+</html>
